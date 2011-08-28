@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/tpope/gem-edit"
   s.summary     = %q{gem edit, gem open, gem clone}
   s.description = <<-EOS
-gem edit: Open a library file you can require
-gem open: Open a gem by name
-gem clone: Clone a gem from GitHub
+gem edit: open a library file you can require.
+gem open: open a gem by name.
+gem clone: clone a gem from GitHub.
   EOS
 
   s.files         = `git ls-files`.split("\n")
