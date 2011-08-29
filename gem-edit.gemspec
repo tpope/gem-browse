@@ -7,11 +7,12 @@ Gem::Specification.new do |s|
   s.authors     = ["Tim Pope"]
   s.email       = ["ruby@tpop"+'e.org']
   s.homepage    = "https://github.com/tpope/gem-edit"
-  s.summary     = %q{gem edit, gem open, gem clone}
+  s.summary     = %q{gem edit, gem open, gem clone, gem browse}
   s.description = <<-EOS
-gem edit: open a library file you can require.
-gem open: open a gem by name.
+gem edit: edit a library file you can require.
+gem open: edit a gem by name.
 gem clone: clone a gem from GitHub.
+gem browse: open a gem's homepage in your browser.
   EOS
 
   s.files         = `git ls-files`.split("\n")

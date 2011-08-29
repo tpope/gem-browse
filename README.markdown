@@ -26,6 +26,11 @@ And tell it to open the gem in your editor afterwards.
 This one doesn't work if the neither the homepage nor the source code
 URL point back at GitHub.
 
+That's really it.  I mean other than the command that lets you open a
+gem's homepage in your browser.
+
+    gem browse sprockets
+
 Installation
 ------------
 
