@@ -18,7 +18,7 @@ I almost forgot.  You can also clone a gem from GitHub.
     gem clone rails
     gem clone -d ~/src capybara
 
-And tell it to open the gem in your editor afterwards.
+And you can tell it to open the gem in your editor afterwards.
 
     gem clone -o rack
     gem clone -oe mvim -d /tmp gem-browse
