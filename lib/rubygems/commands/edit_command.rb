@@ -58,7 +58,7 @@ found, $LOAD_PATH is searched before giving up.
       end
     end
 
-    alert_warning("Could not find #{lib.inspect} in any require path.")
+    alert_warning("Could not find #{lib.inspect} in any require path")
   end
 
 end

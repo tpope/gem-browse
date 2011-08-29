@@ -60,7 +60,7 @@ repositories are recognized.
     begin
       open("http://rubygems.org/api/v1/gems/#{name}.json").read
     rescue OpenURI::HTTPError
-      alert_error "Cannot retrieve gem information for #{name} from rubygems.org."
+      alert_error "Cannot retrieve gem information for #{name} from rubygems.org"
       terminate_interaction 1
     end
   end
