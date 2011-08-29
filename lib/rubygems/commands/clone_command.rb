@@ -31,7 +31,7 @@ repositories are recognized.
         find_by_name(name).homepage
       rescue Gem::LoadError
         json = get_json(name)
-        json[/"homepage_uri":\s*([^"]*)"/, 1]
+        json[/"homepage_uri":\s*"([^"]*)"/, 1]
       end
 
     unless url = repo(homepage)
