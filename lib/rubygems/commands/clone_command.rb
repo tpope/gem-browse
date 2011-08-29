@@ -28,15 +28,11 @@ repositories are recognized.
 
     homepage =
       begin
-        if Gem::Specification.respond_to?(:find_by_name)
-          Gem::Specification.find_by_name(name)
-        else
-          Gem.source_index.find_name(name).last or raise Gem::LoadError
-        end.homepage
-    rescue Gem::LoadError
-      json = get_json(name)
-      json[/"homepage_uri":\s*([^"]*)"/, 1]
-    end
+        find_by_name(name).homepage
+      rescue Gem::LoadError
+        json = get_json(name)
+        json[/"homepage_uri":\s*([^"]*)"/, 1]
+      end
 
     unless url = repo(homepage)
       json ||= get_json(name)

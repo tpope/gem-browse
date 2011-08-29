@@ -24,5 +24,13 @@ module Gem::Edit
       end
     end
 
+    def find_by_name(*args)
+      if Gem::Specification.respond_to?(:find_by_name)
+        Gem::Specification.find_by_name(*args)
+      else
+        Gem.source_index.find_name(*args).last or raise Gem::LoadError
+      end
+    end
+
   end
 end
