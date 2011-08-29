@@ -1,6 +1,6 @@
-require 'rubygems/edit/command'
+require 'rubygems/browse/command'
 
-class Gem::Commands::EditCommand < Gem::Edit::Command
+class Gem::Commands::EditCommand < Gem::Browse::Command
 
   def description
     <<-EOF

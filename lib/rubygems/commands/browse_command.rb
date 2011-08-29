@@ -1,6 +1,6 @@
-require 'rubygems/edit/command'
+require 'rubygems/browse/command'
 
-class Gem::Commands::BrowseCommand < Gem::Edit::Command
+class Gem::Commands::BrowseCommand < Gem::Browse::Command
 
   def initialize
     super 'open', "Open a gem's homepage in your web browser"

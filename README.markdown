@@ -1,5 +1,5 @@
-gem-edit
-========
+gem-browse
+==========
 
 Open a library file you can require in your editor.  That's it.
 
@@ -21,29 +21,30 @@ I almost forgot.  You can also clone a gem from GitHub.
 And tell it to open the gem in your editor afterwards.
 
     gem clone -o rack
-    gem clone -oe mvim -d /tmp gem-edit
+    gem clone -oe mvim -d /tmp gem-browse
 
 This one doesn't work if the neither the homepage nor the source code
 URL point back at GitHub.
 
 That's really it.  I mean other than the command that lets you open a
-gem's homepage in your browser.
+gem's homepage in your browser.  You know, the command this gem is named
+after.
 
     gem browse sprockets
 
 Installation
 ------------
 
-RubyGems 1.8 is required to use `gem edit` itself, but the other
-commands will work on any version that supports RubyGems plugins.
+RubyGems 1.8 is required to use `gem edit`, but the other commands will
+work on any version that supports RubyGems plugins.
 
-    gem install gem-edit
+    gem install gem-browse
 
 If you're using RVM, you can put it in the global gemset (relax, it has
 no dependencies):
 
-    echo gem-edit >> ~/.rvm/gemsets/global.gems
-    rvm @global gem install gem-edit
+    echo gem-browse >> ~/.rvm/gemsets/global.gems
+    rvm @global gem install gem-browse
 
 Protip:  Install [gem-ctags](https://github.com/tpope/gem-ctags) to
 automatically invoke [Ctags](http://ctags.sourceforge.net/) on gems as

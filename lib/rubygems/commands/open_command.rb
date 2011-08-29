@@ -1,7 +1,7 @@
-require 'rubygems/edit/command'
+require 'rubygems/browse/command'
 require 'rubygems/version_option'
 
-class Gem::Commands::OpenCommand < Gem::Edit::Command
+class Gem::Commands::OpenCommand < Gem::Browse::Command
   include Gem::VersionOption
 
   def initialize

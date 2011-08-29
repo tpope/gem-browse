@@ -1,6 +1,6 @@
 require 'rubygems/command'
 
-module Gem::Edit
+module Gem::Browse
   class Command < Gem::Command
 
     def add_editor_option
