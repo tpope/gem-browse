@@ -50,6 +50,36 @@ Protip:  Install [gem-ctags](https://github.com/tpope/gem-ctags) to
 automatically invoke [Ctags](http://ctags.sourceforge.net/) on gems as
 they are installed.
 
+Bash Completion
+---------------
+
+Yep, we've got that. Just add the following to your `.bashrc`:
+
+    _gem_browse() {
+
+        local subcmd cur
+
+        COMPREPLY=()
+        subcmd=${COMP_WORDS[1]}
+        cur=${COMP_WORDS[COMP_CWORD]}
+
+        case "$subcmd" in
+            browse|clone|edit|open)
+                words=`ruby -rubygems -e 'puts Dir["{#{Gem::Specification.dirs.join(",")}}/*.gemspec"].collect { |s| File.basename(s).gsub(/-(\d+.)+gemspec$/, "")}'`
+                ;;
+            *)
+                return
+                ;;
+        esac
+
+        COMPREPLY=($(compgen -W "$words" -- $cur))
+        return 0
+    }
+
+    complete -o default -F _gem_browse gem
+
+Now when you type `gem edit <Tab>` you'll see a list of your installed gems.
+
 Contributing
 ------------
 
