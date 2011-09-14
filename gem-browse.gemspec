@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name        = "gem-browse"
   s.version     = "1.0.0"
   s.authors     = ["Tim Pope"]
-  s.email       = ["ruby@tpop"+'e.org']
+  s.email       = ["code@tpop"+'e.net']
   s.homepage    = "https://github.com/tpope/gem-browse"
   s.summary     = %q{gem edit, gem open, gem clone, gem browse}
   s.description = <<-EOS
