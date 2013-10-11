@@ -14,6 +14,7 @@ gem open: edit a gem by name.
 gem clone: clone a gem from GitHub.
 gem browse: open a gem's homepage in your browser.
   EOS
+  s.license     = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
