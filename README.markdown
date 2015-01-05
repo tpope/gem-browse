@@ -44,7 +44,7 @@ If you're using RVM, you can put it in the global gemset (relax, it has
 no dependencies):
 
     echo gem-browse >> ~/.rvm/gemsets/global.gems
-    rvm @global gem install gem-browse
+    rvm @global do gem install gem-browse
 
 Protip:  Install [gem-ctags](https://github.com/tpope/gem-ctags) to
 automatically invoke [Ctags](http://ctags.sourceforge.net/) on gems as
