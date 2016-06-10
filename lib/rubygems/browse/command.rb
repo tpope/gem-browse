@@ -35,7 +35,7 @@ module Gem::Browse
     def get_json(name)
       require 'open-uri'
       begin
-        open("http://rubygems.org/api/v1/gems/#{name}.json").read
+        open("https://rubygems.org/api/v1/gems/#{name}.json").read
       rescue OpenURI::HTTPError
         alert_error "Cannot retrieve gem information for #{name} from rubygems.org."
         terminate_interaction 1
