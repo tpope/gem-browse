@@ -21,5 +21,5 @@ gem browse: open a gem's homepage in your browser.
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency('rake', '~> 0.8')
+  s.add_development_dependency('rake', '~> 13.0.1')
 end
