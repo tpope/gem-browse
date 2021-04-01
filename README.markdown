@@ -32,6 +32,11 @@ after.
 
     gem browse sprockets
 
+To set the browser it should open up gem's homepages you can set it on your
+global gitconfig.
+
+    git config --global web.browser google-chrome
+
 Installation
 ------------
 
